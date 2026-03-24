@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+[Home](index.html) | [My Books](books.html) | [Gallery](gallery.html) | [Future Projects](future-projects.html) | [Contact](contact.html)
 
 # Anusha Sridharan
 **Author | Poet | Dreamer**
@@ -12,6 +13,12 @@ Welcome! I am a writer who finds magic in the mundane. Whether it’s the quiet 
 
 ## 📚 My Published Works
 *Explore my collection of poetry and prose.*
+
+<div style="background: #f0f4f8; padding: 20px; border-left: 5px solid #6c5ce7; border-radius: 8px; margin: 20px 0;">
+    <h3>✨ Current Feature: The Journey Towards Calm</h3>
+    <p>In a world of noise, finding silence is an art. Read the latest excerpt from my collection exploring the path to inner peace.</p>
+    <a href="books.html" style="color: #6c5ce7; font-weight: bold;">Learn More →</a>
+</div>
 
 ### Featured Release: Sprouted Up Heart
 **"A journey of resilience and growth."**

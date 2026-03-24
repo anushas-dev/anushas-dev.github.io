@@ -2,7 +2,20 @@
 layout: default
 title: Home
 ---
-[Home](index.html) | [My Books](books.html) | [Gallery](gallery.html) | [Future Projects](future-projects.html) | [Contact](contact.html)
+
+## Recent Posts
+
+{% assign recent_posts = site.posts | slice: 0, 5 %}
+{% if recent_posts == empty %}
+No posts yet. Visit the [Blog](/blog/) for updates.
+{% else %}
+{% for post in recent_posts %}
+### <a href="{{ post.url }}">{{ post.title }}</a>
+<p><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
+{{ post.excerpt }}
+<p><a href="{{ post.url }}">Read more →</a></p>
+{% endfor %}
+{% endif %}
 
 # Anusha Sridharan
 **Author | Poet | Dreamer**
@@ -30,7 +43,7 @@ Welcome! I am a writer who finds magic in the mundane. Whether it’s the quiet 
 * **Picturesque Aromas of Thought Alleys:** Sensory poetry and memory.
 * **Tutu & Jo:** A charming exploration of companionship.
 * **The Journey Towards Calm:** Perspectives on finding peace.
-* **Eagle Luck & Quilted Layers of Questions:** Deep dives into the inquisitive mind.
+* **Quilted Layers of Questions:** Deep dives into the inquisitive mind.
 
 ---
 

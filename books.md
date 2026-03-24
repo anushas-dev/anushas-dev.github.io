@@ -46,7 +46,6 @@ A sensory experience in book form, capturing the specific "scents" and feelings 
 ## 🐾 Stories & Observations
 
 * **Tutu & Jo:** A charming exploration of companionship and the small moments that define our relationships.
-* **Eagle Luck:** Observations on perspective, sharp focus, and the grace of nature.
 
 ---
 

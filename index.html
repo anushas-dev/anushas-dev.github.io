@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusha | Author & Writer</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #6c5ce7;
+            --bg: #f9f9f9;
+            --text: #333;
+        }
+        body { font-family: 'Georgia', serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+        header { background: white; padding: 2rem; text-align: center; border-bottom: 1px solid #eee; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
+        .container { max-width: 1000px; margin: auto; padding: 2rem; }
+        .hero { text-align: center; padding: 4rem 0; }
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .book-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .book-card img { max-width: 100%; height: auto; border-radius: 4px; }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Anusha</h1>
+    <nav>
+        <a href="#books">Books</a>
+        <a href="#about">About</a>
+        <a href="https://lazyconundrums.wordpress.com/" target="_blank">Blog</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="hero">
+        <h2>Exploring the Conundrums of Life</h2>
+        <p>Author of <em>Sprouted Up Heart</em> and other literary works.</p>
+    </section>
+
+    <h2 id="books">Featured Works</h2>
+    <div class="book-grid">
+        <div class="book-card">
+            <img src="https://via.placeholder.com/200x300" alt="Sprouted Up Heart Cover">
+            <h3>Sprouted Up Heart</h3>
+            <p>A collection reflecting on growth and the human spirit.</p>
+            <a href="#" class="btn">View on Amazon</a>
+        </div>
+        </div>
+
+    <section id="about" style="margin-top: 4rem;">
+        <h2>About the Author</h2>
+        <p>Welcome to my digital home. I am a writer dedicated to unravelling the complexities of the everyday through poetry and prose. My work often explores themes of resilience, nature, and the quiet moments that define us.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Anusha. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

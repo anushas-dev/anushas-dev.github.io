@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+[Home](index.html) | [My Books](books.html) | [Gallery](gallery.html) | [Future Projects](future-projects.html) | [Contact](contact.html)
+
 ## Recent Posts
 
 {% assign recent_posts = site.posts | slice: 0, 5 %}

@@ -1,17 +1,20 @@
 ---
+---
 layout: page
 title: Blog
 permalink: /blog/
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/blog/:num/'
 ---
 
 # Blog
 
-Recent posts are listed below. Click a title to read the full post.
-
-{% if site.posts.size == 0 %}
+{% if paginator.posts == empty %}
 No posts yet. Check back soon!
 {% else %}
-{% for post in site.posts limit: 10 %}
+{% for post in paginator.posts %}
 <article>
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <p><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
@@ -20,4 +23,14 @@ No posts yet. Check back soon!
 </article>
 <hr/>
 {% endfor %}
+
+<nav class="pagination" role="navigation">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">&laquo; Newer</a>
+  {% endif %}
+  <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Older &raquo;</a>
+  {% endif %}
+</nav>
 {% endif %}
